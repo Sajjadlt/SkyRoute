@@ -110,6 +110,7 @@ class App_user():
         self.my_time()
 
     def get_api_json(self):
+        #if you dont have API key , you can use local API 
         self.flights = self.API.get_live_flights()
         #self.flights = Local_api.get()
         #self.airports = self.API.get_airport_location()
